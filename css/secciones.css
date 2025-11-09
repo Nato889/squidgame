@@ -1,0 +1,57 @@
+.hero-seccion {
+  background-image: url(../imgs/img-reparto1.png);
+  background-size: cover;
+  background-position: center center;
+  margin-top: 100px;
+  padding: 80px;
+  background-attachment: scroll;
+  h1 {
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 40px 10%;
+}
+
+.flex-columns {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 30px;
+  padding: 60px;
+}
+
+.card {
+  background: #111;
+  border-radius: 14px;
+  border: 1px solid #ff008c;
+  padding: 15px;
+  text-align: left;
+  img {
+    width: 100%;
+    display: block;
+  }
+  h2 {
+    color: #e6007e;
+    margin: 0;
+  }
+  h3 {
+    margin: 10px 0 5px;
+    color: #ffffff;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: "oswald";
+  }
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+

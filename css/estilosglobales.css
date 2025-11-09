@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Zen+Dots&display=swap");
+
+body {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-variation-settings: "wdth" 100;
+  margin: 0;
+  /* Ajusté el alto del body para empujar el footer al final */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  /* background color,le puse opacity */
+  background-color: rgb(255 255 255 / 0.9);
+  color: #060606;
+  font-family: "Zen Dots", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  /* Fijo el header en la parte superior */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  .logohome {
+    width: 50%;
+
+    img {
+      width: 10%;
+      padding: 10px;
+    }
+  }
+
+  nav {
+    a {
+      padding: 15px;
+      margin: 10px;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline solid 2px #f00aba;
+    }
+
+    a:visited {
+      color: #060606;
+    }
+
+    #menu-seleccionado {
+      color: #f00aba;
+    }
+  }
+}
+
+footer {
+  background-color: rgb(255 255 255 / 0.9);
+  color: #060606;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+
+  h2 {
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: #e6007e;
+    margin: 0;
+    width: 90%;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  .social img {
+    width: 50px;
+  }
+
+  /* saque la linea azul del link */
+  .social a {
+    text-decoration: none;
+  }
+}
+
+/* me gusta con bordes redondeados */
+.border {
+  border-radius: 30px;
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1rem;
+}

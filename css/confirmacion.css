@@ -1,0 +1,64 @@
+body {
+  background-color: #0a0a0a;
+  /* oscuro estilo Squid Game */
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contenedor {
+  text-align: center;
+  border: 2px solid #ff007f;
+  /* rosa Squid Game */
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 650px;
+}
+
+h1 {
+  color: #ff007f;
+  /* Rosa */
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #ff007f;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #d3006a;
+}
+
+.img-confirmacion {
+  width: 200px;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 18px;
+  transition: transform 0.3s ease;
+}
+
+.img-confirmacion:hover {
+  transform: scale(1.2);
+}
+
+.bgimg {
+  background-image: url(../imgs/bgseccioncontacto.png);
+  background-size: 100%;
+  background-position: center;
+}

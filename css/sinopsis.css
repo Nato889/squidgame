@@ -1,0 +1,11 @@
+.spotify-section {
+  text-align: center;
+  padding: 20px;
+  h2 {
+    margin-bottom: 20px;
+  }
+  iframe {
+    border-radius: 8px;
+    width: 30%;
+  }
+}

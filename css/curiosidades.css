@@ -1,0 +1,8 @@
+.img-emmy {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  img {
+    width: 30%;
+  };
+}

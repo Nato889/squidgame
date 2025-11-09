@@ -1,0 +1,86 @@
+.bgimg {
+  background-image: url(../imgs/bgseccioncontacto.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.subtitulo {
+  font-size: 1rem;
+  margin-bottom: 35px;
+  opacity: 0.8;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.flex-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.flex-columns label {
+    text-align: left;
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+    color: #e6007e;
+}
+
+.flex-columns input:focus,
+.flex-columns textarea:focus {
+  box-shadow: 0 0 10px #e6007e;
+}
+
+.flex-columns button {
+  background: #e6007e;
+  border: none;
+  padding: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.3s;
+  letter-spacing: 1px;
+}
+
+.flex-columns button:hover {
+  background: #e6007e;
+  box-shadow: 0 0 15px #e6007e;
+}
+
+.flex-columns input,
+.flex-columns textarea {
+  max-width: 100%;
+  padding: 12px;
+  border: 2px solid #e6007e;
+  background: #111;
+  color: #fff;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.campo-doble {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.contacto-squid {
+  max-width: 30%;
+  margin: auto;
+  text-align: center;
+  color: #ffffff;
+  padding: 100px;
+}
+
+.contacto-squid h2 {
+
+  font-size: 3rem;
+  color: #e6007e;
+  margin-top: 0%;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}

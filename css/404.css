@@ -1,0 +1,43 @@
+.container404 {
+  display: flex;
+  justify-content: center;
+  margin: 200px;
+  padding: 100px;
+}
+
+.bodyerror404 {
+  background-color: black;
+  color: #ffffff;
+  align-items: center;
+}
+
+.h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-style: normal;
+  font-family: "zen dots";
+}
+.bodyerror404 {
+  position: relative;
+  overflow: hidden;
+}
+
+.video-fondo {
+  position: fixed;
+  top: 40%;
+  left: 45%;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0.25;
+}
+
+.bodyerror404::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}

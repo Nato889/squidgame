@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Zen+Dots&display=swap");
+body {
+  background: #0b0b0b;
+  color: #ffffff;
+  .zendots {
+    color: #ffffff;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+header {
+  text-align: center;
+  margin-top: 100px;
+  padding: 50px;
+  font-family: "zen dots";
+}
+
+.titulo {
+  font-size: 3.4rem;
+  color: #e6007e;
+  margin: 0;
+}
+
+.sub {
+  font-size: 1.1rem;
+  color: #cccccc;
+  font-family: helvetica;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  max-width: 900px;
+  padding-bottom: 60px 40px;
+  margin: auto;
+  gap: 40px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 350px;
+  gap: 14px;
+}
+
+.formulario label {
+  font-size: 0.95rem;
+}
+
+.formulario input {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  background: #1a1a1a;
+  color: white;
+}
+
+.formulario button {
+  margin-top: 10px;
+  padding: 12px;
+  background: #e6007e;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.img-lado {
+  width: 80%;
+  opacity: 0.85;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  font-family: OSWALD;
+}
