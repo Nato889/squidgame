@@ -46,6 +46,7 @@
 .flex-columns button:hover {
   background: #e6007e;
   box-shadow: 0 0 15px #e6007e;
+  transition: all .2s cubic-bezier(0.39, 0.58, 0.57, 1);
 }
 
 .flex-columns input,
