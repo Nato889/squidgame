@@ -1,18 +1,11 @@
-body {
-  background-color: #0a0a0a;
-  /* oscuro estilo Squid Game */
-  color: white;
-  font-family: Arial, sans-serif;
-  margin: 0;
+main {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
 
 .contenedor {
   text-align: center;
+  align-items: center;
   border: 2px solid #ff007f;
   /* rosa Squid Game */
   padding: 30px;
@@ -62,4 +55,25 @@ p {
   background-image: url(../imgs/bgseccioncontacto.png);
   background-size: 100%;
   background-position: center;
+}
+
+/* AGREGADO PARA TPFINAL: Animación: H1 entrando con FADE IN */
+
+.contenedor h1 {
+  overflow: hidden;
+  display: inline-block;
+  min-width: 150px;
+  animation: 1.5s fadeInUp;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }

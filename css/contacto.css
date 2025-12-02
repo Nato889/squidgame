@@ -16,13 +16,14 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  width: 100%;
 }
 
 .flex-columns label {
-    text-align: left;
-    font-size: 0.95rem;
-    margin-bottom: 5px;
-    color: #e6007e;
+  text-align: left;
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+  color: #e6007e;
 }
 
 .flex-columns input:focus,
@@ -46,18 +47,19 @@
 .flex-columns button:hover {
   background: #e6007e;
   box-shadow: 0 0 15px #e6007e;
-  transition: all .2s cubic-bezier(0.39, 0.58, 0.57, 1);
+  transition: all 0.2s cubic-bezier(0.39, 0.58, 0.57, 1);
 }
 
 .flex-columns input,
 .flex-columns textarea {
-  max-width: 100%;
   padding: 12px;
+  box-sizing: border-box;
   border: 2px solid #e6007e;
   background: #111;
   color: #fff;
   border-radius: 6px;
   outline: none;
+  width: 100%;
   font-size: 1rem;
 }
 
@@ -65,23 +67,52 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
+  gap: 15px;
 }
 
 .contacto-squid {
-  max-width: 30%;
+  max-width: 650px;
   margin: auto;
   text-align: center;
   color: #ffffff;
   padding: 100px;
 }
 
+/* AGREGADO PARA TPFINAL: Animación: H2 tipeandose al ingresar a la página */
 .contacto-squid h2 {
-
   font-size: 3rem;
   color: #e6007e;
-  margin-top: 0%;
+  margin-top: 0;
   margin-bottom: 10px;
   letter-spacing: 1px;
   text-transform: uppercase;
+  overflow: hidden;
+  border-right: 0.15em solid rgb(255, 255, 255);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.03rem;
+  animation: typing 3.5s steps(30) forwards, blink-caret 0.75s step-end infinite,
+    hideCursor 0.1s linear 4s forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: #e6007e;
+  }
+}
+
+@keyframes hideCursor {
+  to {
+    border-right: 0;
+  }
 }

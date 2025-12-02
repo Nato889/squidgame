@@ -1,21 +1,38 @@
 .hero {
   position: relative;
-  video {
-    width: 100%;
+}
+
+.hero video {
+  width: 100%;
+}
+
+.hero img {
+  position: absolute;
+  width: 30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-160%, 130%);
+  z-index: 2;
+  opacity: 0;
+  animation: slideHero 1.2s ease-out forwards;
+}
+
+/* AGREGADO PARA TPFINAL: Animación: slide in desde la izquierda */
+@keyframes slideHero {
+  from {
+    transform: translate(-180%, 130%);
+    opacity: 0;
   }
-  img {
-    position: absolute;
-    width: 30%;
-    top: 50%;
-    left: 50%;
+
+  to {
     transform: translate(-160%, 130%);
-    z-index: 2;
+    opacity: 1;
   }
 }
 
 .maincontent {
   /* el primero es top, el del medio es para horizontal, y el ultimo para abajo */
-  margin: 0 auto 30px; 
+  margin: 0 auto 30px;
   background-color: #060606;
   max-width: 1220px;
   padding: 0 20px;
@@ -28,8 +45,12 @@
 }
 
 .botonvermas {
-  width: 150px;
+  width: 120px;
+
+
 }
+
+
 
 .derecho {
   text-align: right;
@@ -39,6 +60,7 @@ article {
   h2 {
     font-size: 36px;
   }
+
   p {
     font-size: 1rem;
     text-align: justify;
@@ -73,12 +95,15 @@ article {
 .threeimg {
   display: flex;
   justify-content: space-evenly;
+
   img {
     width: 30%;
   }
+
   img:hover {
     transform: translateY(-8px);
-    transition: all .2s cubic-bezier(0.39, 0.58, 0.57, 1);
+    transition: all 1s cubic-bezier(0.39, 0.58, 0.57, 1);
+    transform: rotateY(360deg); /* AGREGADO PARA TPFINAL: Animación: giro de imagenes al pasar el cursor */
   }
 }
 
@@ -87,11 +112,18 @@ article {
   top: 50%;
   left: 50%;
   z-index: 2;
+  transition: transform 0.8s ease-in-out;
+
   img {
     width: 130%;
     opacity: 0.1;
     transform: translate(-50%, -15%);
+
   }
+}
+/* AGREGADO PARA TPFINAL: Animación: Giro de la img al pasar el cursor */
+.imgtransparente:hover {
+  transform: rotatex(360deg);
 }
 
 .oculte {

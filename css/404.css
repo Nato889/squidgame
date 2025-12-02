@@ -16,7 +16,9 @@
   font-weight: 800;
   font-style: normal;
   font-family: "zen dots";
+  transition: 0.3s ease;
 }
+
 .bodyerror404 {
   position: relative;
   overflow: hidden;
@@ -40,4 +42,11 @@
   inset: 0;
   background: rgba(0, 0, 0, 0.5);
   z-index: -1;
+}
+
+/* AGREGADO PARA TPFINAL: Animación: cambio de color y sombra en el H1 al pasar el cursor */
+.container404 h1:hover {
+  color: #ff008c;
+  text-shadow:
+    0 0 20px #ffbbe0;
 }
